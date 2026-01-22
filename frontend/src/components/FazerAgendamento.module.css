@@ -1,0 +1,145 @@
+.form_area {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.header{
+  margin-bottom: 1.5rem;
+}
+.header h1{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.date {
+  width: 100%;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+/* hover */
+.date:hover {
+  background: #333;
+}
+
+/* foco */
+.date:focus {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+/* remove ícones padrão (Chrome) */
+.date::-webkit-calendar-picker-indicator {
+  filter: invert(80%);
+  cursor: pointer;
+}
+
+/* quando estiver desabilitado */
+.date:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.hours_group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.hour_input {
+  background: #2a2a2a;
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hour_input:hover {
+  background: #333;
+}
+
+.selected {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.name {
+  width: 100%;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 1.5rem;
+}
+
+/* placeholder */
+.name::placeholder {
+  color: #777;
+}
+
+/* hover */
+.name:hover {
+  background: #333;
+}
+
+/* foco */
+.name:focus {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+/* desabilitado */
+.name:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn_agendar {
+  width: 100%;
+  background: #d4af37;
+  color: #1e1e1e;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* hover */
+.btn_agendar:hover {
+  background: #c29c2e;
+}
+
+/* click */
+.btn_agendar:active {
+  transform: scale(0.98);
+}
+
+/* desabilitado */
+.btn_agendar:disabled {
+  background: #555;
+  color: #999;
+  cursor: not-allowed;
+  transform: none;
+}

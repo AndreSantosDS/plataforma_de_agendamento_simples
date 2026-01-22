@@ -1,0 +1,115 @@
+/* Container geral */
+.agendaContainer {
+  /* background: #0f0f0f; */
+  color: #e5e5e5;
+  padding: 24px;
+  border-radius: 14px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+/* Header */
+.agendaHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.agendaTitle h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.agendaTitle p {
+  font-size: 14px;
+  color: #a1a1a1;
+}
+
+/* Data */
+.agendaDate {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.dateInput {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 10px 12px;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.dateInput:focus {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+/* Períodos */
+.agendaPeriod {
+  background: #141414;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  padding: 16px;
+}
+
+/* Cabeçalho do período */
+.periodHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.periodIcon {
+  font-size: 18px;
+}
+
+.periodTitle {
+  font-size: 15px;
+}
+
+.periodTime {
+  margin-left: auto;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Lista de agendamentos */
+.appointments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Item de agendamento */
+.appointment {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #1e1e1e;
+  padding: 12px 14px;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.appointment:hover {
+  background: #262626;
+}
+
+.appointmentHour {
+  font-weight: bold;
+  color: #d4af37;
+  min-width: 50px;
+}
+
+.appointmentName {
+  color: #e5e5e5;
+  font-size: 14px;
+}
